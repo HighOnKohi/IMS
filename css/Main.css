@@ -1,0 +1,302 @@
+*{
+    font-family: 'Outfit', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    animation: fadeIn .5s;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+
+/*TITLE*/
+.IMS{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.title{
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.Logo img{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: .5rem;
+}
+
+.title:after{
+    content:'I.M.S.';
+    animation: fadeIn .5s;
+}
+
+.title:hover:after{
+    content:'Infraction Management System';
+}
+
+.title:hover{
+    animation: fadeIn .5s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeOut {
+    75% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+
+/*NAVIGATION*/
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #800000;
+    color: #FFD700;
+    cursor: default;
+}
+
+
+/*SEARCH*/
+.search_wrapper {
+    display: flex;
+}
+
+#Search{
+    background-image: url('../res/search.png');
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    background-position: 10px 12px;
+    background-size: 2rem 2rem;
+    width: 100%;
+    font-size: 16px;
+    padding: 1rem 2rem 1rem 4rem;
+    border: 1;
+    border-style: solid;
+    border-color: #FFD700;
+}
+
+#btn_Search{
+    background-color: #800000;
+    color: #FFD700;
+    font-size: 16px;
+    padding: auto;
+    border: 1;
+    border-style: solid;
+    border-color: #FFD700;
+}
+
+/*NAVIGATION LINKS*/
+.nav_links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav_links li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.nav_links a{
+    text-decoration: none;
+    color: #FFD700;
+    padding: 1rem;
+    display: block;
+}
+
+.nav_links li:hover{
+    background-color: #710000;
+    transition: .5s;
+    text-decoration: underline;
+}
+
+
+/*CONTENT*/
+.main_content{
+    background-color: #800000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFD700;
+    border-radius: 10px;
+    margin: .5rem;
+}
+
+.content_nav{
+    color: #FFD700;
+    margin: .5rem;
+    width: 7rem;
+    display: flex;
+    justify-content: center;
+}
+
+.nav_nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.main_nav{
+    box-sizing: border-box;
+}
+
+/*List View BTN*/
+.list_view{
+    cursor: pointer;
+    text-decoration: none;
+    color: #FFD700;
+    padding: 2dvh 40dvw;
+    font-size: 1.25rem;
+    border: .2rem solid #FFD700;
+    background-color: #800000;
+    border-radius: 1rem;
+}
+.list_view:hover{
+    background-color: #710000;
+    transition: .5s;
+    text-decoration: underline;
+}
+
+/*PREVIEW*/
+
+.preview{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preview_box h2{
+    cursor: default;
+    margin: .6rem;
+}
+
+.rec_items{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: default;
+}
+
+.rec_items h3{
+    font-size: 2em;
+}
+
+.Student_record {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2em;
+}
+
+.Student_record th, .Student_record td {
+    padding: 1rem;
+}
+
+/*.Student_Record child{
+    margin: .5rem;
+}
+
+#records li{
+    list-style:none;
+    list-style-type: none;
+    text-decoration: none;
+}*/
+
+.edit, .remove, .Show{
+    background-color: #800000;
+    color: #FFD700;
+    border-radius: 10px;
+    border: .17rem solid #FFD700;
+    padding: 12px 20px;
+    font-size: 1em;
+}
+
+.edit:hover, .remove:hover, .Show:hover{
+    text-decoration: underline;
+    transition: .5s;
+    color: #FFD700;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/*ADD BTN*/
+.add{
+    box-sizing: border-box;
+}
+
+.add ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.add li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.add a{
+    text-decoration: none;
+    color: #FFD700;
+    padding: 1rem;
+    display: block;
+    font-size: 1.25rem;
+    box-sizing: border-box;
+}
+
+.content_nav{
+    width: 45dvw;
+}
+
+.content_nav:hover{
+    transition: .5s;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/*PREVIEWS*/
+.nav_links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav_links li{
+    list-style: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.nav_links a{
+    text-decoration: none;
+    color: #FFD700;
+    padding: 1rem;
+    display: block;
+}
+
+.nav_links li:hover{
+    background-color: #710000;
+    transition: .5s;
+    border-radius: 10px;
+}

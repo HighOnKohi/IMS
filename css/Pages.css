@@ -1,0 +1,361 @@
+*{
+    font-family: 'Outfit', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    animation: fadeIn .5s;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/*TITLE*/
+.IMS{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.title{
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.Logo img{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: .5rem;
+}
+
+.title:after{
+    content:'I.M.S.';
+    animation: fadeIn .5s;
+}
+
+.title:hover:after{
+    content:'Infraction Management System';
+}
+
+.title:hover{
+    animation: fadeIn .5s;
+}
+
+
+
+/*NAVIGATION*/
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #800000;
+    color: #FFD700;
+    cursor: default;
+}
+
+
+/*NAVIGATION LINKS*/
+.nav_links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav_links li{
+    list-style: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.nav_links a{
+    text-decoration: none;
+    color: #FFD700;
+    padding: 1rem;
+    display: block;
+}
+
+.nav_links li:hover{
+    background-color: #710000;
+    transition: .5s;
+    border-radius: 10px;
+}
+
+
+/*MAIN CONTAINER*/
+.main-container{
+    display: flex;
+    justify-content: center;
+    color: #FFD700;
+    border-radius: 10px;
+    margin: .5rem;
+}
+
+
+/*CONTENT*/
+.main_content{
+    background-color: #800000;
+    display: flex;
+    justify-content: center;
+    color: #FFD700;
+    border-radius: 10px;
+    margin: .5rem;
+}
+
+.content_nav{
+    background-color: #800000;
+    display: flex;
+    justify-content: center;
+    color: #FFD700;
+    border-radius: 10px;
+    margin: .5rem;
+    width: 7rem;
+}
+
+/*CONTENT ADD PAGE*/
+.form-container{
+    background-color: #800000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFD700;
+    border-radius: 10px;
+    text-align: center;
+    margin: .3rem;
+    padding: 1rem;
+    width: 80rem;
+}
+
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.add_btn{
+    margin: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#btn-add{
+    background-color: #800000;
+    color: #FFD700;
+    border-radius: 100px;
+    border: .3rem solid #FFD700;
+    padding: 12px 20px;
+    font-size: 1.25rem;
+}
+
+#btn-add:hover{
+    text-decoration: underline;
+    transition: .5s;
+    color: #FFD700;
+}
+
+#Student-textbox, #Section-textbox, #Infraction-dropdown, #Reason-textbox, #Date-textbox, #Time-textbox{
+    background-color: #ffffff;
+    color: #464646;
+    border-radius: 5px;
+    border: .3rem solid #FFD700;
+    padding: 12px 20px;
+    margin: .5rem .75rem;
+    font-size: 1.25rem;
+} 
+
+
+/*CONTENT ABOUT PAGE*/
+.main_content-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFD700;
+    margin: 1rem;
+}
+
+.about{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.about a{
+    color: #FFD700;
+}
+
+.content-about{
+    background-color: #800000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFD700;
+    border-radius: 10px;
+    text-align: center;
+    margin: .3rem;
+    padding: 1rem 5rem;
+}
+
+/*CONTENT CONTACT PAGE*/
+.main_content-contact{
+    background-color: #800000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFD700;
+    border-radius: 10px;
+    margin: 2rem;
+    width: 50rem;
+}
+
+.contact{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.main_content-contact ul{
+    list-style: none;
+}
+
+.main_content-contact img{
+    width: 2rem;
+    height: 2rem;
+}
+
+
+
+/*CONTENT PRIVACY PAGE*/
+.main_content-privacy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFD700;
+    margin: 1rem;
+}
+
+.content-privacy{
+    background-color: #800000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFD700;
+    border-radius: 10px;
+    text-align: center;
+    margin: .3rem;
+    padding: 1rem 5rem;
+}
+
+.content-privacy li{
+    text-align: justify;
+}
+
+.content-privacy{
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.content-privacy a{
+    text-decoration: underline;
+    color: #FFD700;
+}
+
+
+
+/*ADD BTN*/
+.add ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.add li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.add a{
+    text-decoration: none;
+    color: #FFD700;
+    padding: 1rem;
+    display: block;
+}
+
+.add li:hover{
+    background-color: #710000;
+    transition: .5s;
+    text-decoration: underline;
+}
+
+
+/*PREVIEWS*/
+.nav_links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav_links li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.nav_links a{
+    text-decoration: none;
+    color: #FFD700;
+    padding: 1rem;
+    display: block;
+}
+
+.nav_links li:hover{
+    background-color: #710000;
+    transition: .5s;
+    text-decoration: underline;
+}
+
+/* Home Button on preview page */
+.add ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.add li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.add a{
+    text-decoration: none;
+    color: #FFD700;
+    padding: 1rem;
+    display: block;
+}
+
+.content_nav:hover{
+    background-color: #710000;
+    transition: .5s;
+    text-decoration: underline;
+}
+
+
+/* KEYFRAMES FOR ANIMATION */
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeOut {
+    75% {opacity: 1;}
+    100% {opacity: 0;}
+}

@@ -1,0 +1,188 @@
+*{
+    font-family: 'Outfit', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    animation: fadeIn .5s;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    background-image: url(../res/BEC_BG.jpg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+/*TITLE*/
+.IMS{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.title{
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.Logo img{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: .5rem;
+}
+
+.title:after{
+    content:'I.M.S.';
+    animation: fadeIn .5s;
+}
+
+.title:hover:after{
+    content:'Infraction Management System';
+}
+
+.title:hover{
+    animation: fadeIn .5s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeOut {
+    75% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+
+
+/*NAVIGATION*/
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #800000;
+    color: #FFD700;
+    cursor: default;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/*NAVIGATION LINKS*/
+.nav_links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav_links li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.nav_links a{
+    text-decoration: none;
+    color: #FFD700;
+    padding: 1rem;
+    display: block;
+}
+
+.nav_links li:hover{
+    background-color: #710000;
+    transition: .5s;
+    text-decoration: underline;
+}
+
+
+/*CONTENT*/
+.main_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFD700;
+    border-radius: 10px;
+    margin: .5rem;
+}
+
+.content_nav{
+    color: #FFD700;
+    margin: .5rem;
+    width: 7rem;
+    display: flex;
+    justify-content: center;
+}
+
+.all-v2{
+    background-color: #ffffffdc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+/*PREVIEW*/
+
+.preview{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preview_box h2{
+    cursor: default;
+    margin: .6rem;
+}
+
+.rec_items{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: default;
+}
+
+.buttons{
+    cursor: pointer;
+    text-decoration: none;
+    color: #FFD700;
+    padding: 2dvh 40dvw;
+    font-size: 1.25rem;
+    border: .2rem solid #FFD700;
+    background-color: #800000;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.buttons a{
+    text-decoration: none;
+    color: #FFD700;
+}
+
+.buttons:hover{
+    text-decoration: underline;
+    background-color: #710000;
+    transition: .5s;
+}
+
+.some-random-content-sorry{
+    background-color: #fff;
+    align-items: center;
+    text-align: center;
+    border-radius: 1rem;
+    border: .17rem solid #FFD700;
+    color: #800000;
+    margin: 1rem;
+}
+
